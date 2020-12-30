@@ -44,36 +44,41 @@ class Cryptography:
         return text_to_return
         
     def decode(self, Print = False):
-        key_list = []
-        text_char = []
-        text_to_return = ''
-        num = 0
-        
-        #All the key appending in the list:
-        for a in self.key:
-            key_list.append(a)
+        try:
+            key_list = []
+            text_char = []
+            text_to_return = ''
+            num = 0
 
-        #All the chars in encoded text:
-        for a in self.text.split():
-            text_char.append(int(a))
+            #All the key appending in the list:
+            for a in self.key:
+                key_list.append(a)
 
-        #Adding the key upto its length:
-        for a in key_list:
-            if len(key_list) == len(text_char):
-                break
-            key_list.append(a)
+            #All the chars in encoded text:
+            for a in self.text.split():
+                text_char.append(int(a))
 
-        #Adding the decoded text:
-        for a in text_char:
-            text_to_return = text_to_return + str(self.de_k[int(a) - int(self.en_k[key_list[num]])])
-            num += 1
+            #Adding the key upto its length:
+            for a in key_list:
+                if len(key_list) == len(text_char):
+                    break
+                key_list.append(a)
 
-        if Print == True:
-            print(text_to_return)
+            #Adding the decoded text:
+            for a in text_char:
+                text_to_return = text_to_return + str(self.de_k[int(a) - int(self.en_k[key_list[num]])])
+                num += 1
 
-        return text_to_return
+            if Print == True:
+                print(text_to_return)
 
-
+            return text_to_return
+        except:
+            print('Some Error has occured while decoding the text.')
+            print('Try checking the key or the encoded text.')
+            print('If some other error, reply at : replyerrors.parvat@gmail.com')
+       
+cridits = 'Parvat - Developer'
 if __name__ == '__main__':
     print('Hello from Cryptography Module v1.0, developed on : Dec 12 2020, 17:20')
     print('For any help visit : https://github.com/Parvat-web-dev/Simple-Cryptography')
