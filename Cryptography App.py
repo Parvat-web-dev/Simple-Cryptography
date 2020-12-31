@@ -82,7 +82,7 @@ This Program is created using:
     label.place(x = 0, y = 0)
 
 Help = Menu(menu, tearoff = 0)
-Help.add_cascade(label = 'Online Docs')
+Help.add_cascade(label = 'Online Docs', command = go_to)
 Help.add_cascade(label = '  Credits  ', command = Credits)
 
 menu.add_cascade(label = 'File', menu = file)
