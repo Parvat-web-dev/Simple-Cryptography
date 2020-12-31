@@ -6,6 +6,13 @@
 <br>
 <hr>
 
+### Requirements:
+
+<ul>
+<li>Python 3.9 or above
+<li>Tkinter(module)
+<li>webbrowser(module)
+</ul>
 <h2 align = 'center'>How To Use:</h2>
 
 Read the below code to understand how to use the _module_:
