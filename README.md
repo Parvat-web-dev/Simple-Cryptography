@@ -78,4 +78,5 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
 <ul>Created By:
   <li>R. Parvat
 </ul>
+
 ###### Please dont misuse it!
