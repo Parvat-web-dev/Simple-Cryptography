@@ -1,5 +1,3 @@
-## © [Venila Bots](t.me/venilabots) 
-
 <h1 align = 'center'>Simple-Cryptography</h1>
 <h6 align = 'right'>A simple Cryptography module that encrypts and decrypts some text with a key.</h6>
 <hr>
@@ -78,5 +76,7 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
 <ul>Created By:
   <li>R. Parvat
 </ul>
+
+## © [Venila Bots](t.me/venilabots) 
 
 ###### Please dont misuse it!
