@@ -1,6 +1,17 @@
+## © [Venila Bots](t.me/venilabots) 
+
 <h1 align = 'center'>Simple-Cryptography</h1>
 <h6 align = 'right'>A simple Cryptography module that encrypts and decrypts some text with a key.</h6>
 <hr>
+## DISCLAIMER // WARNING ⚠
+``` 
+This Is Just A Encoder And Decoder 
+Module. As Per The License Don't 
+Kang or Copy It. Misuse leads to 
+Jail. We The Team Venila Bots Has No 
+Access To The Misleading You Do 
+Thanks to Read this. 
+```
 
 ### A simple Python module that when used asks you to input some text that you need to _ENCRYPT_ and a _key_ that is used to encrypt the text with the unique combination of the given _key_ and the text this is to be _encrypted_. Only the person who knows the _key_ can crack the encoded text! Without that _key_, even I(_the developer of this program_) cannot **crack the** _encrypted text_!
 <br>
@@ -16,10 +27,10 @@ Read the below code to understand how to use the _module_:
 #Importing the module:
 import Cryptography as c
 
-#Declaring a variable for the encoded text:
+## Declaring a variable for the encoded text:
 a = c.Cryptography('key', 'the text to be encoded')
 
-#Calling the encode function:
+## Calling the encode function:
 a.encode(True)      #If the parameter is True, it will print the encoded text
 ```
 
@@ -60,8 +71,12 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
 
 
 #### Thats all, you know all about this module!
-
+### Reporting 
+<a href="t.me/Venilabots"><img src="https://img.shields.io/badge/Message%20Now-Venila%20Bots-blue"></a>
+<a href="www.paypal.me/rohith204"><img src="https://img.shields.io/badge/Donote%20-Paypal-blue"></a>
+<a href="mailto:replyerrors.parvat@gmail.com "><img src="https://img.shields.io/badge/Gmail-Compose%20Now-red"></a>
 <h6>For any errors reply at <a href = 'mailto:replyerrors.parvat@gmail.com'>replyerrors.parvat@gmail.com</a></h6>
+</a
 <ul>Created By:
   <li>R. Parvat
 </ul>
