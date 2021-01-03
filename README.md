@@ -1,6 +1,7 @@
 <h1 align = 'center'>Simple-Cryptography</h1>
 <h6 align = 'right'>A simple Cryptography module that encrypts and decrypts some text with a key.</h6>
 <hr>
+<a href='#'><img src='https://img.shields.io/badge/Current%20Statue-Under--Development-brightgreen'></a>
 
 ### A simple Python module that when used asks you to input some text that you need to _ENCRYPT_ and a _key_ that is used to encrypt the text with the unique combination of the given _key_ and the text this is to be _encrypted_. Only the person who knows the _key_ can crack the encoded text! Without that _key_, even I(_the developer of this program_) cannot **crack the** _encrypted text_!
 <br>
@@ -72,8 +73,6 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
 <a href="https://www.paypal.me/rohith204"><img src="https://img.shields.io/badge/Donote%20-Paypal-blue"></a>
 <a href="mailto:replyerrors.parvat@gmail.com "><img src="https://img.shields.io/badge/Gmail-Compose%20Now-red"></a>
 <h6>For any errors reply at <a href = 'mailto:replyerrors.parvat@gmail.com'>replyerrors.parvat@gmail.com</a></h6>
-
-##### Current Status : under-development
 
 <ul>Created By:
   <li>R. Parvat
