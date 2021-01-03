@@ -78,6 +78,6 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
   <li>R. Parvat
 </ul>
 
-## © [Venila Bots](t.me/venilabots) 
+## © [Venila Bots](https://t.me/venilabots) 
 
 ###### Please dont misuse it!
