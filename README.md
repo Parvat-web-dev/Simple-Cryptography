@@ -72,7 +72,9 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
 <a href="www.paypal.me/rohith204"><img src="https://img.shields.io/badge/Donote%20-Paypal-blue"></a>
 <a href="mailto:replyerrors.parvat@gmail.com "><img src="https://img.shields.io/badge/Gmail-Compose%20Now-red"></a>
 <h6>For any errors reply at <a href = 'mailto:replyerrors.parvat@gmail.com'>replyerrors.parvat@gmail.com</a></h6>
-</a
+
+##### Current Status : under-development
+
 <ul>Created By:
   <li>R. Parvat
 </ul>
