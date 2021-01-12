@@ -70,7 +70,7 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
 #### Thats all, you know all about this module!
 ### Reporting 
 <a href="https://t.me/Venilabots"><img src="https://img.shields.io/badge/Message%20Now-Venila%20Bots-blue"></a>
-<a href="https://www.paypal.me/rohith204"><img src="https://img.shields.io/badge/Donote%20-Paypal-blue"></a>
+<a href="https://www.paypal.me/rohith204"><img src="https://img.shields.io/badge/Donate%20-Paypal-blue"></a>
 <a href="mailto:replyerrors.parvat@gmail.com "><img src="https://img.shields.io/badge/Gmail-Compose%20Now-red"></a>
 <h6>For any errors reply at <a href = 'mailto:replyerrors.parvat@gmail.com'>replyerrors.parvat@gmail.com</a></h6>
 
