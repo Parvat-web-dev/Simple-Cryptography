@@ -38,7 +38,7 @@ a.encode(True)      #If the parameter is True, it will print the encoded text
 ```
 
 <p>You can see that it prints some wierd numbers which are the encoded text, encoded using your key!</p>
-<h3>Lets decoded some text:</h3>
+<h3>Lets decode some text:</h3>
 <p>The text to be decoded is :</p>
 <p>'40439 24142 30964 51430 54462 37407 33238 30206 53704 30206 22626 36270 29448 54462 23005 29069 23384 33617 29069 24142 23005 59389 29827 30964 29448 54462 29069 29069 31343 35512 47640 '</p>
 <p>The person who had encoded this text had given me the "key" which is : 'secret'</p>
