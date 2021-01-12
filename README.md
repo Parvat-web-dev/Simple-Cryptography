@@ -1,7 +1,7 @@
 <h1 align = 'center'>Simple-Cryptography</h1>
 <h6 align = 'right'>A simple Cryptography module that encrypts and decrypts some text with a key.</h6>
 <hr>
-<a href='#'><img src='https://img.shields.io/badge/Current%20Statue-Under--Development-brightgreen'></a>
+<a href='#'><img src='https://img.shields.io/badge/Current%20Statue-Under--Long%20Time--Development-brightgreen'></a>
 
 ### A simple Python module that when used, asks you to input some text that you need to _ENCRYPT_ and a _key_ that is used to encrypt the text with an unique combination of the given _key_ and the text that is to be _encrypted_. Only the person who knows the _key_ can crack the encoded text! Without that _key_, even I(_the developer of this program_) cannot **crack the** _encrypted text_!
 <br>
