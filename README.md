@@ -3,7 +3,7 @@
 <hr>
 <a href='#'><img src='https://img.shields.io/badge/Current%20Status-Under--Long%20Time--Development-brightgreen'></a>
 <h2>A Python Programmer With LINUX needed for help!</h2>
-<a href='mailto:replyerrors.parvat@gmail.com'><img src='https://img.shields.io/badge/Telegram%20Us-@Parvat_R-brightgreen'></a>
+<a href='https://telegram.me/Parvat_R'><img src='https://img.shields.io/badge/Telegram%20Us-@Parvat_R-brightgreen'></a>
 <a href='mailto:relpyerrors.parvat@gmail.com'><img src='https://img.shields.io/badge/Mail%20Please%20To-replyerrors.parvat@gmail.com-brightgreen'></a>
 <p>Work is just debug a kivy application for android!</p>
 <p>Note*: we are sorry, you will not be paid for that, instead you will have a name in credits and contributing!</p>
