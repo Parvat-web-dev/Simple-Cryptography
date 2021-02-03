@@ -3,7 +3,7 @@
 <a href='https://cyber-viable.000webhostapp.com/'><img src="https://img.shields.io/badge/Website-Cyber--Viable--Simple--Cryptography-blue"></a>
 <hr>
 
-## Download the Cryptography App: Link: [Google Drive](https://www.cyber-viable.000webhostapp.com/landings/simple-cryptography)
+## Download the Cryptography App: Link: [Google Drive](https://drive.google.com/file/d/1xJeJMSSMleukbhbclPpY-_3OQtOPTUJx/view?usp=sharing)
 
 <hr>
 <a href='#'><img src='https://img.shields.io/badge/Current%20Status-Under--Long%20Time--Development-brightgreen'></a>
