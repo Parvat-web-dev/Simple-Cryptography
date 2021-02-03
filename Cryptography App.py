@@ -113,8 +113,10 @@ This Program is created using:
     1. Python 3.9   - Programming Language
     2. Python IDLE      -      Text Editor
     3. Tkinter       -       Python Module
+App Link: https://drive.google.com/file/d/1xJeJMSSMleukbhbclPpY-_3OQtOPTUJx/view?usp=sharing
+Or The Website: https://cyber-viable.000webhostapp.com/
 ''', font = (('Curlz MT'),(24),('italic')), fg = 'white', bg = 'black')
-    label.place(x = 0, y = 0)
+    label.place(x = 0, y = 0, relwidth=1, relheight=1)
 
 Help = Menu(menu, tearoff = 0)
 Help.add_cascade(label = 'Online Docs')
