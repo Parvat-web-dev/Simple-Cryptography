@@ -30,7 +30,10 @@ text_return.config(state=NORMAL)
 text_return.place(relx=0.5, y = 150, relheight=0.7, relwidth=0.5)
 
 def go_to():
-    wb.open_new('https://github.com/Parvat-web-dev/Simple-Cryptography/')
+    try:
+        wb.open_new('https://github.com/Parvat-web-dev/Simple-Cryptography/')
+    except:
+        print('Webbrowser Module Not Found!')
     pass
 
 def encode(event = None):
@@ -121,17 +124,23 @@ menu.add_cascade(label = 'File', menu = file)
 menu.add_cascade(label = 'Cryptography', menu = crypto)
 menu.add_cascade(label = 'Help', menu = Help)
 
+#The shortcutkeys
 app.bind_all('<Control-Key-e>', encode)
 app.bind_all('<Control-Key-d>', decode)
 app.bind_all('<Control-Key-s>', SaveAs)
 app.bind_all('<Control-Key-n>', NewWin)
-app.bind_all('<Control-Key-q>', quit)
+def EXIT(event=None):
+    app.destroy()
+    quit()
+app.bind_all('<Control-Key-q>', EXIT)
 
+#The shortcut keys
 text_input.bind_all('<Control-Key-e>', encode)
 text_input.bind_all('<Control-Key-d>', decode)
 text_input.bind_all('<Control-Key-s>', SaveAs)
 text_input.bind_all('<Control-Key-n>', NewWin)
 
+#The encode and decode buttons
 btn1 = Button(app, text = ' Encode ', command = encode, font = (('Consolas'),(18),('bold')), fg = 'white', bg = 'green')
 btn2 = Button(app, text = ' Decode ', command = decode, font = (('Consolas'),(18),('bold')), fg = 'darkgreen', bg = 'white')
 btn1.place(relx=0.6, y = 50, relwidth=0.2)
