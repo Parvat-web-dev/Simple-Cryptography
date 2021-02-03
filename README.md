@@ -3,17 +3,38 @@
 <a href='https://cyber-viable.000webhostapp.com/'><img src="https://img.shields.io/badge/Website-Cyber--Viable--Simple--Cryptography-blue"></a>
 <hr>
 <a href='#'><img src='https://img.shields.io/badge/Current%20Status-Under--Long%20Time--Development-brightgreen'></a>
-<h2>A Python Programmer With LINUX needed for help!</h2>
 <a href='https://telegram.me/Parvat_R'><img src='https://img.shields.io/badge/Telegram%20Us-@Parvat_R-brightgreen'></a>
 <a href='mailto:relpyerrors.parvat@gmail.com'><img src='https://img.shields.io/badge/Mail%20Please%20To-replyerrors.parvat@gmail.com-brightgreen'></a>
-<p>Work is just debug a kivy application for android!</p>
-<p>Note*: we are sorry, you will not be paid for that, instead you will have a name in credits and contributing!</p>
 
 ### A simple Python module that when used, asks you to input some text that you need to _ENCRYPT_ and a _key_ that is used to encrypt the text with an unique combination of the given _key_ and the text that is to be _encrypted_. Only the person who knows the _key_ can crack the encoded text! Without that _key_, even I(_the developer of this program_) cannot **crack the** _encrypted text_!
 <br>
 <hr>
 
-### Requirements:
+# The Cryptography App(_.exe_):
+### A simple app made with Tkinter and converted into _.exe_ file with the help of [pyinstaller](https://pypi.org/project/pyinstaller/). The app has the following features:
+
+<ul>
+  <li>Encodes and Decodes the text given in the _blue_ area.
+    <ul>Shotrcut Keys:
+      <li>Ctrl+e</li>
+      <li>Ctrl+d</li>
+    </ul>
+  </li>
+  <li>Can save the encoded text
+    <ul>Shortcut Keys
+      <li>Ctrl+s</li>
+    </ul>
+  </li>
+  <li>Can copy the encoded or decoded text in the black area.
+    <ul>Usage:
+      <li>The 'Paste' and 'Copy' buttons are in the 'Cryptography' menu at the top.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+### Requirements for the module:
 
 <ul>
 <li>Python 3.9 or above
