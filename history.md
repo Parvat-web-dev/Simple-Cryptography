@@ -1,7 +1,7 @@
 # The History Of Simple Cryptography<br>
 <br>
 <br>
-|----Release of V2.2 On Feb 3, 2021 with a new copy ans paste feature<br>
+|----Release of V2.2 On Feb 3, 2021 with a new copy ans paste feature and Introducing a website for simple cryptography.<br>
 |<br>
 |---Release of V2.1 On Jan 3, 2021 with A new Save As Feature.<br>
 |<br>
