@@ -1,6 +1,6 @@
 <h1 align = 'center'>Simple-Cryptography</h1>
 <h6 align = 'right'>A simple Cryptography module that encrypts and decrypts some text with a key.</h6>
-<a href='https://cyber-viable.000webhostapp.com/'><img src="https://img.shields.io/badge/Website-Cyber--Viable--Simple--Cryptography-blue"></a>
+<a href='https://sprin-g-reen.github.io/simple%20cryptography/'><img src="https://img.shields.io/badge/Website-SPRINGREEN-blue"></a>
 <hr>
 
 ## Download the Cryptography App: Link: [Google Drive](https://drive.google.com/file/d/1xJeJMSSMleukbhbclPpY-_3OQtOPTUJx/view?usp=sharing)
@@ -106,9 +106,10 @@ a.decode(True)      #If the parameter is True, it will print the encoded text
 <h6>For any errors reply at <a href = 'mailto:replyerrors.parvat@gmail.com'>replyerrors.parvat@gmail.com</a></h6>
 
 <ul>Created By:
-  <li>R. Parvat
+  <li>R. Parvat</li>
+  <li>S.V. Rohithaditya</li>
 </ul>
 
-## © [Venila Bots](https://t.me/venilabots) 
+## © [SPRINGREEN](https://t.me/venilabots) 
 
 ###### Please dont misuse it!
