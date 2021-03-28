@@ -1,4 +1,3 @@
-import Cryptography as e
 from tkinter import *
 from tkinter import filedialog as f
 from datetime import datetime as d
@@ -6,7 +5,93 @@ from kivy.core.clipboard import Clipboard
 try:
     import webbrowser as wb
 except:
-    print('`webbrowser` - package is not installed, so one feature may not work!')
+    print('`webbrowser` - package is not installed, so one feature may not work! Try using `pip install webbrowser`')
+
+class Cryptography:
+    def __init__(self, key, text):
+        self.en_c = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~', ' ', '\t', '\n', '\r', '\x0b', '\x0c']
+        self.de_c = []
+        self.key = str(key)
+        self.text = str(text)
+
+        for a in range(6765, 190897, 379):
+            if len(self.de_c) == len(self.en_c):
+                break
+            self.de_c.append(a)
+            
+        self.en_k = dict(zip(self.en_c, self.de_c))
+        self.de_k = dict(zip(self.de_c, self.en_c))
+
+    def encode(self, Print = False):
+        key_list = []
+        encoded_text_list = []
+        text_to_return = ''
+        num = 0
+
+        #Adding the letters of the 'key' in the list at key_list
+        for letters in self.key:
+            key_list.append(letters)
+
+        #Adding the letters in the text
+        for character in self.text:
+            encoded_text_list.append(self.en_k[character])
+
+        #Adding the items of list again and again till it is equal to len of the text
+        for item in key_list:
+            if len(key_list) == len(encoded_text_list):
+                break
+            key_list.append(item)
+
+        #The text to be returned:
+        for a in encoded_text_list:
+            text_to_return = text_to_return + str(int(a) + int(self.en_k[key_list[num]])) + ' '
+            num += 1
+
+        if Print == True:
+            print(text_to_return)
+
+        return text_to_return
+        
+    def decode(self, Print = False):
+        try:
+            key_list = []
+            text_char = []
+            text_to_return = ''
+            num = 0
+
+            #All the key appending in the list:
+            for a in self.key:
+                key_list.append(a)
+
+            #All the chars in encoded text:
+            for a in self.text.split():
+                text_char.append(int(a))
+
+            #Adding the key upto its length:
+            for a in key_list:
+                if len(key_list) == len(text_char):
+                    break
+                key_list.append(a)
+
+            #Adding the decoded text:
+            for a in text_char:
+                text_to_return = text_to_return + str(self.de_k[int(a) - int(self.en_k[key_list[num]])])
+                num += 1
+
+            if Print == True:
+                print(text_to_return)
+
+            return text_to_return
+        except:
+            print('Some Error has occured while decoding the text.')
+            print('Try checking the key or the encoded text.')
+            print('If some other error, reply at : replyerrors.parvat@gmail.com')
+       
+cridits = 'Parvat - Developer'
+if __name__ == '__main__':
+    print('Hello from Cryptography Module v1.0, developed on : Dec 12 2020, 17:20')
+    print('For any help visit : https://github.com/Parvat-web-dev/Simple-Cryptography')
+
 
 app = Tk()
 app.geometry('600x500')
@@ -39,14 +124,14 @@ def go_to():
 def encode(event = None):
     text = text_input.get('1.0', 'end-1c')
     Key = key.get()
-    a = e.Cryptography(Key, text)
+    a = Cryptography(Key, text)
     b = a.encode(True)
     text_return['text'] = b
 
 def decode(event = None):
     text = text_input.get('1.0', 'end-1c')
     Key = key.get()
-    a = e.Cryptography(Key, text)
+    a = Cryptography(Key, text)
     b = a.decode(True)
     text_return['text'] = b
     
@@ -104,17 +189,19 @@ def Credits():
     cre.config(bg = 'black')
     cre.geometry('570x400')
     cre.title('Credits')
-    cre.resizable(False, False)
+    #cre.resizable(False, False)
     label = Label(cre, text = '''This GUI App is created by:
         R. Parvat -
+        S.V. Rohithaditya
 Launched in github on :
         Dec 31 2020   12:45
 This Program is created using:
     1. Python 3.9   - Programming Language
     2. Python IDLE      -      Text Editor
     3. Tkinter       -       Python Module
+Telegram Support: @venilabots
 App Link: https://drive.google.com/file/d/1xJeJMSSMleukbhbclPpY-_3OQtOPTUJx/view?usp=sharing
-Or The Website: https://cyber-viable.000webhostapp.com/
+Or The Website: https://sprin-g-reen.github.io/simple%20cryptography/
 ''', font = (('Curlz MT'),(24),('italic')), fg = 'white', bg = 'black')
     label.place(x = 0, y = 0, relwidth=1, relheight=1)
 
