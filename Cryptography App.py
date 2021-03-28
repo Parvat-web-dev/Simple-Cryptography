@@ -15,7 +15,7 @@ app.minsize(350, 500)
 menu = Menu(app)
 
 key = Entry(app, font = (('Courier'), ('20'), ('italic')), justify = CENTER)
-key.place(relx = 0, y = 50, relwidth=0.6)
+key.place(relx = 0, y = 50, relwidth=1)
 
 label1 = Label(app, text = 'Text To Encode/Decode :', font = 'Courier 18')
 label2 = Label(app, text = 'Key :', font = 'Courier 18 bold')
@@ -52,7 +52,7 @@ def decode(event = None):
     
 
 def NewWin(event = None):
-    import app
+    return __import__("Cryptography App")
 
 def SaveAs(event = None):
     now = d.now()
@@ -145,8 +145,14 @@ text_input.bind_all('<Control-Key-n>', NewWin)
 #The encode and decode buttons
 btn1 = Button(app, text = ' Encode ', command = encode, font = (('Consolas'),(18),('bold')), fg = 'white', bg = 'green')
 btn2 = Button(app, text = ' Decode ', command = decode, font = (('Consolas'),(18),('bold')), fg = 'darkgreen', bg = 'white')
-btn1.place(relx=0.6, y = 50, relwidth=0.2)
-btn2.place(relx=0.8, y = 50, relwidth=0.2)
+btn1.place(relx=0, y = 85, relwidth=0.25)
+btn2.place(relx=0.25, y = 85, relwidth=0.25)
+
+#the copy and paste buttons
+btn3 = Button(app, text = ' Copy ', command = Copy, font = (('Consolas'),(18),('bold')), fg = 'white', bg = 'green')
+btn4 = Button(app, text = ' Paste ', command = Paste, font = (('Consolas'),(18),('bold')), fg = 'darkgreen', bg = 'white')
+btn3.place(relx=0.5, y = 85, relwidth=0.25)
+btn4.place(relx=0.75, y = 85, relwidth=0.25)
 
 
 app.config(menu = menu)
